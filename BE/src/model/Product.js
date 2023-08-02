@@ -1,5 +1,6 @@
-import mongoose from "mongoose"
-const productSchame = mongoose.Schema({
+import mongoose from "mongoose";
+const productSchame = mongoose.Schema(
+  {
     name: String,
     auther: String,
     published: String,
@@ -9,8 +10,10 @@ const productSchame = mongoose.Schema({
     quantity: Number,
     date: String,
     categoryId: {
-        type: mongoose.Types.ObjectId, ref: "category"
-    }
-
-}, { timestamps: true, versionKey: false })
-export default mongoose.model("product", productSchame)
+      type: mongoose.Types.ObjectId,
+      ref: "category",
+    },
+  },
+  { timestamps: true, versionKey: false }
+);
+export default mongoose.model("product", productSchame);
