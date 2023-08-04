@@ -5,12 +5,13 @@ import LayOutClt from './layout/layoutClient'
 function App() {
   return (
     <>
+
       <Routes>
         <Route path='/' element={<LayOutClt />}>
           <Route index element={<HomePage />} />
-
         </Route>
       </Routes>
+
     </>
   )
 }
