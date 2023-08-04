@@ -1,6 +1,6 @@
 
 import HomePage from './page/homePage'
-
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import LayOutClt from './layout/layoutClient'
 function App() {
