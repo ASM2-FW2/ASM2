@@ -1,20 +1,17 @@
-import { Fragment, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Outlet} from 'react-router-dom'
-import './App.css'
+import { Fragment } from 'react'
 import Header from './Component/Header/Header'
 import Footer from './Component/Footer/Footer'
+import Home from './Component/Homepage/Home'
 
 function App() {
 
   return (
     <Fragment>
-      <Header/>
+      <Header />
       <main>
-      <Outlet/>
+        <Home />
       </main>
-      <Footer/>
+      <Footer />
     </Fragment>
   )
 }
