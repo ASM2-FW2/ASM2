@@ -1,7 +1,10 @@
-
+import Footer from "../Footer/Footer"
+import Header from "../Header/Header"
 const ProductPage = () => {
     return (
         <div>
+            <Header/>
+            <div>
             <h2 className=''>Điện thoại nổi bật</h2>
             <div className='grid grid-cols-6 gap-6 mb-3'>
 
@@ -79,6 +82,8 @@ const ProductPage = () => {
                 </div>
 
             </div>
+        </div>
+        <Footer/>
         </div>
     )
 }

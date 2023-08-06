@@ -1,7 +1,11 @@
+import Footer from "../Footer/Footer"
+import Header from "../Header/Header"
 
 const Home = () => {
   return (
     <div>
+      <Header/>
+      <div>
 
       <div className="container my-4 p-4 z-depth-1">
 
@@ -170,10 +174,9 @@ const Home = () => {
 
 
         </section>
-
-
-
       </div>
+    </div>
+    <Footer/>
     </div>
   )
 }
