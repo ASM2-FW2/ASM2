@@ -110,8 +110,8 @@ const Addproduct = () => {
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button type="primary" htmlType="submit">
-            thêm sản phẩm
+          <Button type="primary" htmlType="submit" className='text-black'>
+            Thêm sản phẩm
           </Button>
         </Form.Item>
       </Form>

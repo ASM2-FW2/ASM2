@@ -1,10 +1,12 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import { productReducer } from "../slice/ProductSlice";
+import { categoryReducer } from "../slice/CategorySlice";
 
 
 const store = configureStore({
     reducer: {
-        products: productReducer
+        products: productReducer,
+        categorys: categoryReducer
     }
 })
 export type AppDispatch = typeof store.dispatch

@@ -1,3 +1,4 @@
+import { Button } from "antd"
 import { deleteProduct, getAllProduct } from "../../../action/Product"
 import { useAppDispatch, useAppSelector } from "../../../store/hooks"
 import { useEffect } from 'react'
@@ -19,9 +20,9 @@ const ProductAdmin = () => {
     }
   }
   return (
-    <>
+    <div>
 
-      <button ><Link to={"/admin/add"}>thêm sản phẩm</Link> </button>
+      <Button type="primary" className="text-black" ><Link to={"/admin/add"}>Thêm sản phẩm</Link> </Button>
       <table className="table">
         <thead>
           <tr>
@@ -58,7 +59,7 @@ const ProductAdmin = () => {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   )
 }
 

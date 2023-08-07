@@ -4,6 +4,10 @@ export const getAllProduct = createAsyncThunk("product/getallproduct", async () 
     const data = await instance.get("/products")
     return data
 })
+export const getOne = createAsyncThunk("product/getOneproduct", async (id: any) => {
+    const data = await instance.get("/products/"+{id})
+    return data
+})
 export const addProduct = createAsyncThunk("product/addproduct", async (product: any) => {
     const data = await instance.post("/products", product)
     return data
